@@ -10,6 +10,9 @@ import TaskList from "@tiptap/extension-task-list";
 import StarterKit from "@tiptap/starter-kit";
 import Image from "@tiptap/extension-image";
 import ImageResize from "tiptap-extension-resize-image";
+import Underline from "@tiptap/extension-underline";
+import FontFamily from "@tiptap/extension-font-family";
+import TextStyle from "@tiptap/extension-text-style";
 import { useEditorStore } from "@/store/use-editor-store";
 
 export const Editor = () => {
@@ -48,6 +51,9 @@ export const Editor = () => {
     },
     extensions: [
       StarterKit,
+      FontFamily,
+      TextStyle,
+      Underline,
       Image,
       ImageResize,
       Table,
@@ -64,7 +70,7 @@ export const Editor = () => {
           <tbody>
             <tr>
               <th>Name</th>
-              <th colspan="3">Description</th>
+              <th colspan="3">what</th>
             </tr>
             <tr>
               <td>Miyamoto Musashi</td>
